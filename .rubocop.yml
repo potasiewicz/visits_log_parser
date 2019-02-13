@@ -3,3 +3,9 @@ AllCops:
   - 'visit_log_parser.rb'
 Documentation:
   Enabled: false
+Metrics/LineLength:
+  Max: 120
+Metrics/BlockLength:
+  Enabled: true
+  Exclude: 
+    - spec/**/*
