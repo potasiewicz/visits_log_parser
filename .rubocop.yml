@@ -9,3 +9,7 @@ Metrics/BlockLength:
   Enabled: true
   Exclude: 
     - spec/**/*
+Lint/ImplicitStringConcatenation:
+  Enabled: true
+  Exclude: 
+    - spec/**/*
