@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 describe FileReader do
-  before(:each) do
-    @file_path = './spec/example_data/test_webserver.log'
-  end
   describe '#to_hash' do
-    context 'file is in correct format' do
+    context 'file has correct format' do
+      before(:each) do
+        @file_path = './spec/example_data/test_webserver.log'
+      end
       it 'return file as hash object' do
         file_as_hash = FileReader.new(@file_path).to_hash
 
@@ -21,6 +21,14 @@ describe FileReader do
           '126.318.035.038',
           '126.318.035.039'
         ]
+      end
+    end
+    context 'file has incorrect format' do
+      before(:each) do
+        @file_path = './spec/example_data/test_webserver_invalid.log'
+      end
+      it 'return RuntimeException' do
+        expect { FileReader.new(@file_path).to_hash }.to raise_error RuntimeError
       end
     end
   end
