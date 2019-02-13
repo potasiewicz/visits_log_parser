@@ -1,0 +1,5 @@
+AllCops:
+  Exclude:
+  - 'visit_log_parser.rb'
+Documentation:
+  Enabled: false
