@@ -17,7 +17,7 @@ describe ConsoleOutputWriter do
   end
   context 'postfix is set' do
     subject { ConsoleOutputWriter.new(@data, 'unique views') }
-    it 'return "{path} {count_of_view} visits" text' do
+    it 'return "{path} {count_of_view} {postfix}" text' do
       expected_output = "path/a 4 unique views\npath/b 2 unique views\n"
 
       expect { subject }.to output(expected_output).to_stdout
