@@ -25,3 +25,4 @@ Some default rubocop rules were changes.
 - Metrics/LineLength - I'm always using 120 chars. The whole line is well visible on a screen
 - Metrics/BlockLength - has been switch off only for **spec** dir. Tests usually contain longer modules
 - Lint/ImplicitStringConcatenation - has been switch off only for **spec** dir. It simplifies application tests
+- Style/FrozenStringLiteralComment - has been switch off only for visits_log_parser.rb. The first line in this file is to set script interpreter

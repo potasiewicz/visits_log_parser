@@ -1,6 +1,6 @@
 AllCops:
   Exclude:
-  - 'visit_log_parser.rb'
+  - 'visits_log_parser.rb'
 Documentation:
   Enabled: false
 Metrics/LineLength:
@@ -13,3 +13,7 @@ Lint/ImplicitStringConcatenation:
   Enabled: true
   Exclude: 
     - spec/**/*
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Exclude: 
+    - visits_log_parser.rb
