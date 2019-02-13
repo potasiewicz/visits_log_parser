@@ -1,7 +1,7 @@
 # Visits Log Application
 ### Ruby version
-The application was developed and checked with **ruby 2.5.0**.
-This version of ruby is required in **Gemfile**
+The application was developed and checked with **ruby 2.5.0** and **ruby 2.6.1**.
+
 ### Running application
 ```sh
 $ bundle install
