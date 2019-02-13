@@ -13,14 +13,14 @@ $ bundle install
 $ rspec
 ```
 ### Code coverage
-Report with code coverage is available in dir **coverage** when tests have been finished.
+Report with code coverage will be available in dir **coverage** after tests executing.
 
 ### Static code analysis
 ```sh
 $ bundle install
 $ rubocop
 ```
-Some default rubocop rules were changes. 
+Some default rubocop rules were changed. 
 - Documentation - has been switch off because the code is so simple that it is self-describing
 - Metrics/LineLength - I'm always using 120 chars. The whole line is well visible on a screen
 - Metrics/BlockLength - has been switch off only for **spec** dir. Tests usually contain longer modules
