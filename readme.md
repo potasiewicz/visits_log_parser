@@ -13,7 +13,7 @@ $ bundle install
 $ rspec
 ```
 ### Code coverage
-Report with code coverage is available in dir coverage when tests have been finished.
+Report with code coverage is available in dir **coverage** when tests have been finished.
 
 ### Static code analysis
 ```sh
